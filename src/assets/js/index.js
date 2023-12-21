@@ -34,6 +34,11 @@ async function performSearch() {
     updateResultCard(results);
 }
 
+function getMoreResults() {
+    page++;
+    performSearch();
+}
+
 function updateResultCard(results) {
     if (resultsContainer) {
         if (page === 1) {
@@ -87,13 +92,13 @@ function hideTagline() {
     tagline.style.removeProperty('margin-top');
 }
 
-function backToTop() {
+function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 window.onscroll = function () {
-    const backToTopButton = document.getElementById('backToTopButton');
-    backToTopButton.style.display = document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? 'block' : 'none';
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    scrollTopBtn.style.display = document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? 'block' : 'none';
 };
 
 document.getElementById('imageModal').addEventListener('show.bs.modal', function (event) {
