@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eli Bautista">
+    <meta name="keywords" content="picture, pictures, image, images, image grove, Eli Bautista">
+    <meta name="description" content="Explore and search images using the Unsplash API. Created by Eli Bautista.">
+    <title>Image Grove</title>
+
+    <link rel="shortcut icon" href="src/assets/icons/icon.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-success">
+        <div class="container-xxl">
+            <a href="../../../index.html" class="navbar-brand">
+                <span class="fw-bold text-white" style="font-family: 'Rubik Doodle Shadow', sans-serif;">
+                    Image Grove <i class="fa-solid fa-images" style="color: #ffffff;"></i>
+                </span>
+            </a>
+            <button class="navbar-toggler border-0" id="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars" id="navbar-toggler-label" style="color: #ffffff;"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="about.html" target="_parent" class="nav-link text-white text-center"><small>About</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" target="_parent" class="nav-link text-white text-center"><small>Contact</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://unsplash.com/documentation" target="_blank" class="nav-link text-white text-center"><small>API Documentation</small></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mb-5">
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 shadow rounded-4 p-3">
+                    <div class="jumbotron">
+                        <h2 class="text-center mb-4" style="font-family: 'Rubik Doodle Shadow', sans-serif !important; color: #d4721c; font-weight: bolder;">About Image Grove</h2>
+                        <p class="text-justify">
+                            Welcome to Image Grove, a platform created by Eli Bautista. Image Grove allows you to explore and search for a vast collection of images using the Unsplash API. Discover high-quality pictures, download them, and use them in your creative projects or personal use.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 shadow rounded-4 p-3">
+                    <div class="jumbotron">
+                        <h4 class="mt-4" style="font-family: 'Rubik Doodle Shadow', sans-serif !important; color: #d4721c; font-weight: bolder;">Our Vision</h4>
+                        <p class="text-justify">
+                            Our vision is to provide users with a seamless and enjoyable experience in discovering and accessing a diverse range of images. We aim to be a go-to platform for individuals seeking inspiration and visual content for their projects or personal use.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 shadow rounded-4 p-3">
+                    <div class="jumbotron">
+                        <h4 class="mt-4" style="font-family: 'Rubik Doodle Shadow', sans-serif !important; color: #d4721c; font-weight: bolder;">Our Mission</h4>
+                        <p class="text-justify">
+                            Image Grove is on a mission to simplify the process of finding and using high-quality images. We strive to empower individuals, designers, and creators by providing them with a curated collection of visuals that enhance their projects or personal use and bring their ideas to life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <div class="row ">
+                <div class="col-lg-8 offset-lg-2 shadow rounded-4 p-3">
+                    <div class="jumbotron">
+                        <h4 class="mt-4" style="font-family: 'Rubik Doodle Shadow', sans-serif !important; color: #d4721c; font-weight: bolder;">About the Creator</h4>
+                        <p class="text-justify">
+                            Image Grove was created by Eli Bautista, a passionate developer with a vision to make visual content accessible to everyone. Eli believes in the power of images to convey stories and emotions. With Image Grove, he aspires to contribute to the creative journey of individuals around the globe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center bg-body-tertiary mt-auto bg-success">
+        <div class="footer-text text-center p-3 bg-success text-white" style="font-size: 1rem;">
+            © 2023 Copyright by
+            <a class="text-body text-decoration-none" href="#" style="color: white !important; font-size: 1rem;">Eli
+                Bautista</a>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img id="modalImage" class="img-fluid" alt="Image Preview">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTopButton" onclick="backToTop()"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <script src="../js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MBO3MCG9usvZLpbpAZBZlKv+q3wFl5OhFi90J4zfu9msPge/98e/g0h5YO93/lhP"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
